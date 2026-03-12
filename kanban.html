@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban & Negócios — Central de Ajuda HubCRM</title>
+  <meta name="description" content="Como gerenciar pipelines, etapas e negócios no Kanban do HubCRM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>
+        HubCRM <span class="logo-badge">Ajuda</span>
+      </a>
+      <nav class="header-nav">
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar com suporte
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-layout">
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav">
+          <h4>Nesta página</h4>
+          <ul>
+            <li><a href="#pipeline">Criar pipeline</a></li>
+            <li><a href="#etapas">Gerenciar etapas</a></li>
+            <li><a href="#negocios">Criar negócios</a></li>
+            <li><a href="#mover">Mover entre etapas</a></li>
+            <li><a href="#ganho-perdido">Ganho e Perdido</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-whatsapp">
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Suporte WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        <div class="breadcrumb">
+          <a href="index.html">Central de Ajuda</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Kanban & Negócios</span>
+        </div>
+
+        <h1 style="font-size:1.9rem;margin-bottom:.5rem;">📊 Kanban & Negócios</h1>
+        <p style="font-size:1.05rem;margin-bottom:2rem;">Visualize e gerencie seu funil de vendas com pipelines personalizados e negócios em arraste-e-solte.</p>
+
+        <h2 id="pipeline" data-section>Criar um pipeline</h2>
+        <p>Um pipeline representa seu processo de vendas. Você pode ter múltiplos pipelines para diferentes produtos, serviços ou equipes.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Acesse Kanban no menu lateral</h4>
+              <p>Se não houver nenhum pipeline, o sistema oferece criar o primeiro automaticamente.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Clique em "+ Novo Pipeline"</h4>
+              <p>Dê um nome ao pipeline (ex: "Vendas B2B", "Suporte Premium").</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Adicione as etapas (colunas)</h4>
+              <p>Crie as colunas do funil com nomes e cores. Ex: "Prospecção", "Proposta Enviada", "Negociação", "Fechamento".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">
+            <strong>Limite por plano</strong>
+            Free: 1 pipeline · Pro: até 5 pipelines · Enterprise: ilimitado.
+          </div>
+        </div>
+
+        <h2 id="etapas" data-section>Gerenciar etapas (colunas)</h2>
+        <p>Cada pipeline tem suas próprias etapas (colunas do Kanban). Para gerenciar:</p>
+        <ul>
+          <li><strong>Adicionar etapa</strong> — Clique no botão "+" no final das colunas.</li>
+          <li><strong>Renomear etapa</strong> — Clique no nome da coluna para editar.</li>
+          <li><strong>Mudar cor</strong> — Cada etapa pode ter uma cor para fácil identificação visual.</li>
+          <li><strong>Reordenar etapas</strong> — Arraste a coluna para a posição desejada.</li>
+          <li><strong>Excluir etapa</strong> — Somente etapas sem negócios podem ser excluídas.</li>
+        </ul>
+
+        <h2 id="negocios" data-section>Criar negócios</h2>
+        <p>Um negócio representa uma oportunidade de venda vinculada a um contato.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Clique em "+ Negócio" em qualquer etapa</h4>
+              <p>O card de negócio será adicionado à etapa selecionada.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Preencha os dados</h4>
+              <p><strong>Título</strong> (obrigatório), <strong>valor</strong> estimado, <strong>data prevista de fechamento</strong> e <strong>contato</strong> vinculado (autocomplete).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Salve o negócio</h4>
+              <p>O card aparece imediatamente na etapa selecionada.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="mover" data-section>Mover negócios entre etapas</h2>
+        <p>A funcionalidade principal do Kanban: <strong>arraste o card</strong> de uma coluna para outra para avançar o negócio no funil.</p>
+        <ul>
+          <li>O histórico de movimentações é registrado automaticamente.</li>
+          <li>Você também pode editar o negócio e alterar a etapa pelo campo de seleção.</li>
+        </ul>
+
+        <h2 id="ganho-perdido" data-section>Marcar como Ganho ou Perdido</h2>
+        <p>Quando o processo de venda for concluído, marque o negócio com o resultado:</p>
+
+        <ul>
+          <li><strong>Ganho ✅</strong> — Venda fechada. O negócio é arquivado com status "Ganho". O valor entra nas métricas de receita.</li>
+          <li><strong>Perdido ❌</strong> — Negociação encerrada sem fechamento. Você pode registrar o <strong>motivo da perda</strong> para análise posterior.</li>
+        </ul>
+
+        <p>Para marcar, clique nos três pontos (⋮) no card do negócio e selecione "Marcar como Ganho" ou "Marcar como Perdido".</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <strong>Analise os motivos de perda</strong>
+            Registrar o motivo de perda ajuda a identificar padrões e melhorar o processo de vendas. Use os dados para treinar a equipe.
+          </div>
+        </div>
+
+        <h2 id="faq" data-section>Perguntas frequentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso ter o mesmo contato em múltiplos negócios?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim. Um contato pode estar vinculado a vários negócios simultaneamente — em diferentes pipelines ou na mesma etapa. Por exemplo, o mesmo cliente pode ter uma proposta de produto A e outra de produto B em andamento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Como ver negócios ganhos e perdidos?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Use os filtros no topo do Kanban para exibir negócios por status: "Ativos", "Ganhos" ou "Perdidos". Você pode filtrar também por período de fechamento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Atingi o limite de negócios, como ampliar?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Free: 20 negócios · Pro: 500 negócios · Enterprise: ilimitado. Faça upgrade de plano ou feche/arquive negócios antigos. Veja <a href="planos.html">Planos & Limites</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-banner" style="margin-top:2.5rem;">
+          <div class="support-banner-text">
+            <h3>💬 Ainda com dúvidas?</h3>
+            <p>Nossa equipe responde rapidamente no WhatsApp.</p>
+          </div>
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp btn-whatsapp-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:white;margin-bottom:.5rem;display:inline-flex;"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#818cf8"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>&nbsp;HubCRM</a>
+        <p>CRM Omnichannel para equipes que querem atender melhor e vender mais.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Central de Ajuda</a>
+        <a href="contatos.html">Contatos</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener">💬 Suporte WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 HubCRM. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

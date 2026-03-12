@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatos — Central de Ajuda HubCRM</title>
+  <meta name="description" content="Como criar, editar, organizar e buscar contatos no HubCRM com tags e filtros." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>
+        HubCRM <span class="logo-badge">Ajuda</span>
+      </a>
+      <nav class="header-nav">
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar com suporte
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-layout">
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav">
+          <h4>Nesta página</h4>
+          <ul>
+            <li><a href="#criar-contato">Criar contato</a></li>
+            <li><a href="#editar-contato">Editar e excluir</a></li>
+            <li><a href="#tags">Organizar com tags</a></li>
+            <li><a href="#pesquisar">Pesquisar contatos</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-whatsapp">
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Suporte WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        <div class="breadcrumb">
+          <a href="index.html">Central de Ajuda</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Contatos</span>
+        </div>
+
+        <h1 style="font-size:1.9rem;margin-bottom:.5rem;">👥 Contatos</h1>
+        <p style="font-size:1.05rem;margin-bottom:2rem;">Gerencie sua base de clientes de forma organizada — crie, edite e segmente com tags.</p>
+
+        <h2 id="criar-contato" data-section>Criar um contato</h2>
+        <p>Acesse <strong>Contatos</strong> no menu lateral e clique no botão <strong>"+ Novo Contato"</strong>.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Preencha o nome</h4>
+              <p>O nome completo do cliente. Campo obrigatório.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Informe o telefone</h4>
+              <p>O número é dividido em 3 campos: <strong>código do país</strong> (ex: 55), <strong>DDD</strong> (ex: 11) e <strong>número</strong>. Isso garante compatibilidade com WhatsApp e campanhas.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Adicione e-mail e tags (opcional)</h4>
+              <p>Tags ajudam a segmentar seus contatos para campanhas e filtros. Você pode criar quantas quiser.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Salve o contato</h4>
+              <p>Clique em "Salvar". O contato aparece imediatamente na lista.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">
+            <strong>Limite por plano</strong>
+            Free: 100 contatos · Pro: 5.000 contatos · Enterprise: ilimitado. Veja <a href="planos.html">Planos & Limites</a>.
+          </div>
+        </div>
+
+        <h2 id="editar-contato" data-section>Editar e excluir contatos</h2>
+        <p>Na lista de contatos, clique sobre o contato desejado ou no ✏️ para abrir o modal de edição.</p>
+        <ul>
+          <li>Altere qualquer campo e clique em <strong>"Salvar"</strong> para confirmar.</li>
+          <li>Para excluir, clique no ícone 🗑️. A exclusão é permanente — confirme com atenção.</li>
+          <li>Contatos excluídos <strong>não afetam conversas já existentes</strong>, apenas são removidos da lista.</li>
+        </ul>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <strong>Exclusão irreversível</strong>
+            Ao excluir um contato, suas tags e informações são removidas permanentemente. Saídas e histórico de conversas são mantidos separadamente.
+          </div>
+        </div>
+
+        <h2 id="tags" data-section>Organizar com tags</h2>
+        <p>Tags são etiquetas que você cria livremente para categorizar contatos. Exemplos: <strong>Cliente VIP</strong>, <strong>Lead</strong>, <strong>Fornecedor</strong>, <strong>Inadimplente</strong>.</p>
+
+        <ul>
+          <li>Tags podem ser criadas diretamente no modal do contato.</li>
+          <li>Um mesmo contato pode ter múltiplas tags.</li>
+          <li>Nas campanhas, você pode filtrar destinatários por tag — assim, apenas os contatos com aquela tag recebem a mensagem.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <strong>Dica de segmentação</strong>
+            Use tags para segmentar campanhas: envie promoções apenas para "Clientes Pro", ou avisos para "Contratos em aberto".
+          </div>
+        </div>
+
+        <h2 id="pesquisar" data-section>Pesquisar contatos</h2>
+        <p>Use a barra de pesquisa no topo da lista de contatos para encontrar rapidamente por:</p>
+        <ul>
+          <li><strong>Nome</strong> — busca em tempo real enquanto digita.</li>
+          <li><strong>Telefone</strong> — insira DDD + número ou somente o número.</li>
+        </ul>
+        <p>Combine a pesquisa com filtros de tag para refinar ainda mais os resultados.</p>
+
+        <h2 id="faq" data-section>Perguntas frequentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso importar uma lista de contatos (CSV/Excel)?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>A importação em massa via arquivo está disponível no plano Pro e Enterprise. Entre em contato com nosso suporte pelo WhatsApp para solicitar o modelo de planilha e instruções de importação.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Um contato pode ter o mesmo telefone de outro?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>O sistema verifica duplicidade por telefone dentro da mesma conta. Se você tentar criar um contato com o mesmo número, será alertado antes de salvar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Atingi o limite de contatos, como ampliar?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Faça upgrade para o plano Pro (5.000 contatos) ou Enterprise (ilimitado). Acesse <a href="planos.html">Planos & Limites</a> ou fale com nosso suporte pelo WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-banner" style="margin-top:2.5rem;">
+          <div class="support-banner-text">
+            <h3>💬 Precisa de ajuda?</h3>
+            <p>Nossa equipe responde rapidamente pelo WhatsApp.</p>
+          </div>
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp btn-whatsapp-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:white;margin-bottom:.5rem;display:inline-flex;"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#818cf8"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>&nbsp;HubCRM</a>
+        <p>CRM Omnichannel para equipes que querem atender melhor e vender mais.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Central de Ajuda</a>
+        <a href="canais.html">Canais</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener">💬 Suporte WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 HubCRM. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

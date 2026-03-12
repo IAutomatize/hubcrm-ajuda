@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campanhas — Central de Ajuda HubCRM</title>
+  <meta name="description" content="Como criar e gerenciar campanhas de disparo em massa via WhatsApp no HubCRM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>
+        HubCRM <span class="logo-badge">Ajuda</span>
+      </a>
+      <nav class="header-nav">
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar com suporte
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-layout">
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav">
+          <h4>Nesta página</h4>
+          <ul>
+            <li><a href="#criar">Criar campanha</a></li>
+            <li><a href="#mensagem">Compor a mensagem</a></li>
+            <li><a href="#destinatarios">Escolher destinatários</a></li>
+            <li><a href="#configuracoes">Intervalos e limites</a></li>
+            <li><a href="#acompanhar">Acompanhar progresso</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-whatsapp">
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Suporte WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        <div class="breadcrumb">
+          <a href="index.html">Central de Ajuda</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Campanhas</span>
+        </div>
+
+        <h1 style="font-size:1.9rem;margin-bottom:.5rem;">📣 Campanhas</h1>
+        <p style="font-size:1.05rem;margin-bottom:2rem;">Envie mensagens em massa via WhatsApp para seus contatos com controle de intervalo, limite diário e acompanhamento em tempo real.</p>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">
+            <strong>Canais suportados para campanhas</strong>
+            WhatsApp via QR Code (texto livre) e WhatsApp Oficial/Meta (templates aprovados). Instagram e e-mail não suportam campanhas.
+          </div>
+        </div>
+
+        <h2 id="criar" data-section>Criar uma campanha</h2>
+        <p>Acesse <strong>Campanhas</strong> no menu lateral e clique em <strong>"+ Nova Campanha"</strong>. O assistente possui 5 etapas:</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Etapa 1 — Informações gerais</h4>
+              <p>Dê um nome para identificar a campanha internamente. Ex: "Promoção Junho 2025".</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Etapa 2 — Canal de envio</h4>
+              <p>Selecione o canal WhatsApp conectado. Você pode usar QR Code (texto livre) ou Oficial Meta (com template).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Etapa 3 — Mensagem</h4>
+              <p>Canal QR Code: escreva a mensagem livremente. Canal Meta: selecione um template aprovado.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Etapa 4 — Destinatários</h4>
+              <p>Selecione contatos manualmente ou filtre por <strong>tag</strong>. Limite: 1.000 destinatários por campanha.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <h4>Etapa 5 — Configurações de envio</h4>
+              <p>Defina intervalo entre mensagens (5–59 segundos), limite diário (opcional) e agendamento.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="mensagem" data-section>Compor a mensagem</h2>
+
+        <h3>WhatsApp QR Code (texto livre)</h3>
+        <p>Escreva qualquer mensagem. Você pode usar variáveis de personalização como <code>{{nome}}</code> para incluir o nome do contato automaticamente em cada mensagem.</p>
+
+        <h3>WhatsApp Oficial (Meta — templates)</h3>
+        <p>Selecione um template previamente aprovado no Meta Business Manager. Os templates podem ter:</p>
+        <ul>
+          <li><strong>Cabeçalho</strong> — Texto, imagem ou vídeo.</li>
+          <li><strong>Corpo da mensagem</strong> — Texto com variáveis {{1}}, {{2}}...</li>
+          <li><strong>Rodapé</strong> — Texto informativo.</li>
+          <li><strong>Botões</strong> — Resposta rápida ou link de ação.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <strong>Personalize com o nome do contato</strong>
+            Use a variável <code>{{nome}}</code> na mensagem para que cada destinatário receba a saudação com o próprio nome. Ex: "Olá {{nome}}, temos uma oferta especial para você!"
+          </div>
+        </div>
+
+        <h2 id="destinatarios" data-section>Escolher destinatários</h2>
+        <p>Existem duas formas de selecionar quem vai receber a campanha:</p>
+        <ul>
+          <li><strong>Seleção manual</strong> — Marque contatos individualmente na lista.</li>
+          <li><strong>Filtro por tag</strong> — Selecione uma ou mais tags e todos os contatos com aquela tag serão incluídos automaticamente.</li>
+        </ul>
+        <p>O número total de destinatários é exibido antes da confirmação. Limite de <strong>1.000 destinatários por campanha</strong>.</p>
+
+        <h2 id="configuracoes" data-section>Intervalos e limites</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Configuração</th><th>Descrição</th><th>Valor</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Intervalo entre envios</strong></td>
+                <td>Tempo de espera entre cada mensagem enviada</td>
+                <td>5 a 59 segundos</td>
+              </tr>
+              <tr>
+                <td><strong>Limite diário</strong></td>
+                <td>Máximo de mensagens enviadas por dia (opcional)</td>
+                <td>Personalizável</td>
+              </tr>
+              <tr>
+                <td><strong>Agendamento</strong></td>
+                <td>Data e hora para iniciar o envio automaticamente</td>
+                <td>Qualquer data futura</td>
+              </tr>
+              <tr>
+                <td><strong>Campanhas simultâneas</strong></td>
+                <td>Máximo de campanhas rodando ao mesmo tempo</td>
+                <td>QR: 3 · Meta: 1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <strong>Use intervalos adequados</strong>
+            Intervalos muito curtos podem resultar em bloqueio do número pelo WhatsApp. Recomendamos no mínimo 10–15 segundos para manter a conta segura.
+          </div>
+        </div>
+
+        <h2 id="acompanhar" data-section>Acompanhar o progresso</h2>
+        <p>Na lista de campanhas, clique em uma campanha ativa para ver o painel de acompanhamento:</p>
+
+        <ul>
+          <li><strong>Barra de progresso</strong> — Total enviado vs. total de destinatários.</li>
+          <li><strong>Status por contato</strong> — Cada contato mostra: <span class="badge badge-free">Pendente</span>, <span class="badge badge-green">Enviado</span> ou <span class="badge badge-pro" style="background:#fee2e2;color:#991b1b;">Erro</span>.</li>
+          <li><strong>Botões de controle</strong> — Pausar, retomar ou cancelar a campanha.</li>
+        </ul>
+
+        <p>Se o servidor reiniciar durante o envio, a campanha continua automaticamente do ponto onde parou.</p>
+
+        <h2 id="faq" data-section>Perguntas frequentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso pausar e retomar uma campanha?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim. Clique em "Pausar" no painel da campanha. Para retomar, clique em "Continuar". Os contatos já enviados não recebem a mensagem novamente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Como agendar uma campanha para amanhã?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Na etapa 5 do assistente, em "Configurações de envio", marque a opção "Agendar para depois" e selecione a data e horário desejado. A campanha iniciará automaticamente nesse momento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              O que acontece se um contato não tiver número de telefone?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Contatos sem número de telefone válido são automaticamente ignorados pela campanha. O status aparecerá como "Erro" com o motivo "Telefone inválido".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-banner" style="margin-top:2.5rem;">
+          <div class="support-banner-text">
+            <h3>💬 Precisa de ajuda com campanhas?</h3>
+            <p>Nossa equipe pode te auxiliar a montar sua primeira campanha.</p>
+          </div>
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+ajuda+para+criar+uma+campanha+no+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp btn-whatsapp-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:white;margin-bottom:.5rem;display:inline-flex;"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#818cf8"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>&nbsp;HubCRM</a>
+        <p>CRM Omnichannel para equipes que querem atender melhor e vender mais.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Central de Ajuda</a>
+        <a href="canais.html">Canais</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener">💬 Suporte WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 HubCRM. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

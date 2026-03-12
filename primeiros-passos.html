@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primeiros Passos — Central de Ajuda HubCRM</title>
+  <meta name="description" content="Como criar sua conta, verificar o e-mail e fazer seu primeiro login no HubCRM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#4f46e5"/>
+          <path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="24" cy="22" r="4" fill="#06b6d4"/>
+        </svg>
+        HubCRM
+        <span class="logo-badge">Ajuda</span>
+      </a>
+      <nav class="header-nav">
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM."
+           target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar com suporte
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav">
+          <h4>Nesta página</h4>
+          <ul>
+            <li><a href="#criar-conta">Criar sua conta</a></li>
+            <li><a href="#verificar-email">Verificar e-mail</a></li>
+            <li><a href="#primeiro-login">Primeiro login</a></li>
+            <li><a href="#recuperar-senha">Recuperar senha</a></li>
+            <li><a href="#sessao">Sessão e segurança</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-whatsapp">
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM."
+             target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Suporte WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <!-- CONTENT -->
+      <div class="article-content">
+        <div class="breadcrumb">
+          <a href="index.html">Central de Ajuda</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Primeiros Passos</span>
+        </div>
+
+        <h1 style="font-size:1.9rem;margin-bottom:.5rem;">🚀 Primeiros Passos</h1>
+        <p style="font-size:1.05rem;margin-bottom:2rem;">Tudo o que você precisa para criar sua conta e começar a usar o HubCRM.</p>
+
+        <!-- CRIAR CONTA -->
+        <h2 id="criar-conta" data-section>Criar sua conta</h2>
+        <p>Para começar a usar o HubCRM, acesse o endereço do sistema e clique em <strong>"Criar conta"</strong> na tela de login.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Preencha os dados da empresa</h4>
+              <p>Informe nome completo, e-mail corporativo, telefone e documento (CPF ou CNPJ).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Crie uma senha segura</h4>
+              <p>Use no mínimo 8 caracteres, com letras maiúsculas, minúsculas e números.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Confirme o cadastro</h4>
+              <p>Clique em "Criar conta". Um e-mail de verificação será enviado imediatamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">
+            <strong>E-mail corporativo recomendado</strong>
+            Utilize um e-mail profissional para garantir que os e-mails de verificação e notificações cheguem corretamente.
+          </div>
+        </div>
+
+        <!-- VERIFICAR EMAIL -->
+        <h2 id="verificar-email" data-section>Verificar o e-mail</h2>
+        <p>Após o cadastro, você receberá um e-mail com o assunto <strong>"Confirme seu e-mail — HubCRM"</strong>.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Abra o e-mail de verificação</h4>
+              <p>Verifique também a caixa de SPAM caso não encontre na caixa de entrada.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Clique no botão "Verificar meu e-mail"</h4>
+              <p>O link é válido por 24 horas. Após esse prazo, será necessário solicitar um novo.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Acesse o sistema</h4>
+              <p>Após a verificação, você será redirecionado para a tela de login.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <strong>Link expirado?</strong>
+            Se o link de verificação expirou, faça login normalmente — o sistema oferecerá a opção de reenviar o e-mail de verificação.
+          </div>
+        </div>
+
+        <!-- PRIMEIRO LOGIN -->
+        <h2 id="primeiro-login" data-section>Primeiro login</h2>
+        <p>Com o e-mail verificado, acesse o HubCRM com suas credenciais:</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Informe e-mail e senha</h4>
+              <p>Use as mesmas credenciais criadas no cadastro.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Acesse o Dashboard</h4>
+              <p>Você será direcionado ao painel principal com um resumo do uso da sua conta.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Configure seu primeiro canal</h4>
+              <p>Clique em "Canais" no menu lateral e conecte seu WhatsApp ou outro canal de atendimento.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECUPERAR SENHA -->
+        <h2 id="recuperar-senha" data-section>Recuperar senha</h2>
+        <p>Esqueceu sua senha? O processo é simples e seguro:</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Clique em "Esqueci minha senha"</h4>
+              <p>Na tela de login, abaixo dos campos de e-mail e senha.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Informe seu e-mail cadastrado</h4>
+              <p>Você receberá um link de redefinição com validade de <strong>1 hora</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Crie uma nova senha</h4>
+              <p>Siga o link do e-mail, defina uma nova senha e faça login normalmente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <strong>Segurança</strong>
+            Cada link de redefinição é de uso único e expira automaticamente após 1 hora. Nunca compartilhe esse link.
+          </div>
+        </div>
+
+        <!-- SESSAO -->
+        <h2 id="sessao" data-section>Sessão e segurança</h2>
+        <p>Sua sessão no HubCRM é mantida por <strong>7 dias</strong>. Após esse período, você será desconectado automaticamente por segurança.</p>
+
+        <ul>
+          <li>Ao ficar inativo por um longo tempo, o sistema exibe um <strong>aviso de sessão expirando</strong>.</li>
+          <li>Qualquer atividade (navegar, clicar, digitar) renova a sessão automaticamente.</li>
+          <li>Para sair manualmente, clique no ícone do usuário no topo do sistema e selecione <strong>"Sair"</strong>.</li>
+        </ul>
+
+        <div class="callout callout-danger">
+          <span class="callout-icon">🔒</span>
+          <div class="callout-body">
+            <strong>Computadores compartilhados</strong>
+            Se você usa o HubCRM em um computador compartilhado, sempre clique em "Sair" ao terminar para evitar acessos não autorizados.
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <h2 id="faq" data-section>Perguntas frequentes</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Não recebi o e-mail de verificação, o que faço?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Verifique a pasta de SPAM ou lixo eletrônico. Se não encontrar, tente fazer login — o sistema oferece a opção de reenviar o e-mail. Se o problema persistir, entre em contato com o suporte via WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso criar mais de uma conta com o mesmo e-mail?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Não. Cada e-mail pode ser vinculado a apenas uma conta. Se você precisa de acesso em uma empresa já cadastrada, peça ao administrador da conta que te envie um convite.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Como adicionar outros usuários à minha conta?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Acesse <strong>Configurações → Usuários</strong> e clique em "Convidar usuário". Informe o e-mail e a função (admin ou agente). O sistema vai enviar um e-mail de convite. Consulte <a href="usuarios.html">Usuários & Equipe</a> para mais detalhes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUPPORT CTA -->
+        <div class="support-banner" style="margin-top:2.5rem;">
+          <div class="support-banner-text">
+            <h3>💬 Ainda com dúvidas?</h3>
+            <p>Nossa equipe está disponível para te ajudar pelo WhatsApp.</p>
+          </div>
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM."
+             target="_blank" rel="noopener" class="btn-whatsapp btn-whatsapp-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+      </div><!-- /article -->
+    </div><!-- /page-layout -->
+  </div><!-- /container -->
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:white;margin-bottom:.5rem;display:inline-flex;">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#818cf8"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>
+          &nbsp;HubCRM
+        </a>
+        <p>CRM Omnichannel para equipes que querem atender melhor e vender mais.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Central de Ajuda</a>
+        <a href="canais.html">Canais</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener">💬 Suporte WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 HubCRM. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

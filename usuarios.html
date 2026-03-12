@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuários & Equipe — Central de Ajuda HubCRM</title>
+  <meta name="description" content="Como convidar usuários, definir funções e gerenciar acessos no HubCRM." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>
+        HubCRM <span class="logo-badge">Ajuda</span>
+      </a>
+      <nav class="header-nav">
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Falar com suporte
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="page-layout">
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav">
+          <h4>Nesta página</h4>
+          <ul>
+            <li><a href="#funcoes">Funções disponíveis</a></li>
+            <li><a href="#convidar">Convidar usuário</a></li>
+            <li><a href="#aceitar">Aceitar convite</a></li>
+            <li><a href="#gerenciar">Gerenciar usuários</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-whatsapp">
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Suporte WhatsApp
+          </a>
+        </div>
+      </aside>
+
+      <div class="article-content">
+        <div class="breadcrumb">
+          <a href="index.html">Central de Ajuda</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Usuários & Equipe</span>
+        </div>
+
+        <h1 style="font-size:1.9rem;margin-bottom:.5rem;">👤 Usuários & Equipe</h1>
+        <p style="font-size:1.05rem;margin-bottom:2rem;">Adicione membros à sua equipe, defina quem é admin e quem é agente, e gerencie acessos com segurança.</p>
+
+        <h2 id="funcoes" data-section>Funções disponíveis</h2>
+        <p>O HubCRM possui duas funções (roles) para usuários da conta:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Função</th>
+                <th>O que pode fazer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge badge-pro">Admin</span></td>
+                <td>Acesso completo: configurar canais, convidar usuários, acessar todas as conversas, gerenciar campanhas, Kanban, contatos e configurações da conta.</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-free">Agente</span></td>
+                <td>Acesso operacional: visualizar e responder conversas, criar e editar contatos, gerenciar negócios no Kanban. Não pode alterar configurações da conta ou canais.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">
+            <strong>O criador da conta é sempre Admin</strong>
+            O primeiro usuário a criar a conta recebe automaticamente a função de Admin e não pode ter sua função rebaixada.
+          </div>
+        </div>
+
+        <h2 id="convidar" data-section>Convidar um usuário</h2>
+        <p>Somente administradores podem convidar novos usuários.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Acesse Configurações → Usuários</h4>
+              <p>Clique no ícone de configurações no menu lateral e selecione "Usuários".</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Clique em "Convidar Usuário"</h4>
+              <p>Informe o <strong>e-mail</strong> do novo membro e selecione a <strong>função</strong> (Admin ou Agente).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Envie o convite</h4>
+              <p>O sistema envia um e-mail com o link de convite. O convite fica pendente até ser aceito.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <strong>Limite de usuários por plano</strong>
+            Free: 2 usuários · Pro: 5 usuários · Enterprise: ilimitado. Se atingir o limite, o botão de convite ficará desabilitado até o upgrade do plano.
+          </div>
+        </div>
+
+        <h2 id="aceitar" data-section>Aceitar um convite</h2>
+        <p>O usuário convidado receberá um e-mail com o assunto <strong>"Você foi convidado para o HubCRM"</strong>.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Clique no link do e-mail de convite</h4>
+              <p>O link leva para uma página de criação de conta já com o e-mail preenchido.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Defina um nome e senha</h4>
+              <p>Preencha o nome completo e crie uma senha segura.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>Acesse o sistema</h4>
+              <p>Após aceitar, o usuário já tem acesso imediato com a função atribuída pelo admin.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="gerenciar" data-section>Gerenciar usuários existentes</h2>
+        <p>Na lista de usuários (Configurações → Usuários), os admins podem:</p>
+        <ul>
+          <li><strong>Alterar função</strong> — Promover agente a admin ou rebaixar admin a agente (exceto o criador da conta).</li>
+          <li><strong>Desativar usuário</strong> — Bloqueia o acesso sem excluir o histórico de atividades.</li>
+          <li><strong>Reativar usuário</strong> — Restaura o acesso de um usuário desativado.</li>
+          <li><strong>Reenviar convite</strong> — Se o usuário não encontrou o e-mail original, reenvie o convite.</li>
+          <li><strong>Cancelar convite</strong> — Remove convites pendentes que não foram aceitos.</li>
+        </ul>
+
+        <h2 id="faq" data-section>Perguntas frequentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              Posso ter dois admins na conta?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Sim. Você pode ter múltiplos admins dentro do limite de usuários do seu plano. Basta convidar o usuário com a função "Admin".</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Um agente desativado consome uma vaga no plano?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Não. Usuários desativados não contam no limite de usuários ativos do plano. Você pode desativar membros que saíram da equipe para liberar vagas sem perder o histórico.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              O convite expirou, como proceder?
+              <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <p>Acesse Configurações → Usuários, localize o convite pendente e clique em "Reenviar Convite". Um novo link será gerado e enviado ao e-mail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-banner" style="margin-top:2.5rem;">
+          <div class="support-banner-text">
+            <h3>💬 Precisa de ajuda?</h3>
+            <p>Nossa equipe responde no WhatsApp.</p>
+          </div>
+          <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener" class="btn-whatsapp btn-whatsapp-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:white;margin-bottom:.5rem;display:inline-flex;"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#818cf8"/><path d="M8 10h16M8 16h10M8 22h13" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="22" r="4" fill="#06b6d4"/></svg>&nbsp;HubCRM</a>
+        <p>CRM Omnichannel para equipes que querem atender melhor e vender mais.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Central de Ajuda</a>
+        <a href="primeiros-passos.html">Primeiros Passos</a>
+        <a href="planos.html">Planos</a>
+        <a href="https://wa.me/5515991716525?text=Ol%C3%A1%21+Preciso+de+suporte+com+o+HubCRM." target="_blank" rel="noopener">💬 Suporte WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 HubCRM. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
